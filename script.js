@@ -1,36 +1,36 @@
-// kita gunakan fetch dalam kita ambil data sample.txt yang sudah kita buat
-fetch('https://sheetdb.io/api/v1/dip2zg3wqt21o')
-    // kita buat response menjadi json
-    .then((response) => response.json())
-    // lalu data nya kita ambil dan kita masuken ke p id output
-    .then((data) => {
-        // kita buat variabel output 
-        let output = '';
-        // kita console.log agar mengetahui apakah data nya sudah masuk atau belum
-        console.log(data);
-        // forEach ini adalah looping dan dinamakan user
-        data.forEach((user) => {
-            // kita tambahkan output-nya jangan lupa gunakan backslash `` yang di sebelah angka nomer 1
-            // kita panggil id name email didapat dari users.json
-            output += `
-            <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink" data-aos="zoom-in-up" data-aos-duration="600">
-                <div class="w-96 bg-base-100 shadow-xl rounded-xl">
-                    <figure class="px-10 pt-10">
-                        <img src="${user.gambar}" alt="${user.gambar}" class="rounded-xl" data-aos="zoom-in-up" data-aos-duration="600">
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <h2 class="card-title"  data-aos="zoom-in-up" data-aos-duration="600">${user.judul}</h2>
-                        <p  data-aos="zoom-in-up" data-aos-duration="600">${user.deskripsi}</p>
-                    </div>
-                </div>
-            </div>
-            `;
-        })
-        // kita panggil id output agar bisa di tampilkan ke browser saat di klik
-        document.getElementById('output').innerHTML = output;
-    })
-    // membuat catch jadi kalau ada yang error langsung ketawan
-    .catch((err) => console.log(err));
+// // kita gunakan fetch dalam kita ambil data sample.txt yang sudah kita buat
+// fetch('https://sheetdb.io/api/v1/dip2zg3wqt21o')
+//     // kita buat response menjadi json
+//     .then((response) => response.json())
+//     // lalu data nya kita ambil dan kita masuken ke p id output
+//     .then((data) => {
+//         // kita buat variabel output 
+//         let output = '';
+//         // kita console.log agar mengetahui apakah data nya sudah masuk atau belum
+//         console.log(data);
+//         // forEach ini adalah looping dan dinamakan user
+//         data.forEach((user) => {
+//             // kita tambahkan output-nya jangan lupa gunakan backslash `` yang di sebelah angka nomer 1
+//             // kita panggil id name email didapat dari users.json
+//             output += `
+//             <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink" data-aos="zoom-in-up" data-aos-duration="600">
+//                 <div class="w-96 bg-base-100 shadow-xl rounded-xl">
+//                     <figure class="px-10 pt-10">
+//                         <img src="${user.gambar}" alt="${user.gambar}" class="rounded-xl" data-aos="zoom-in-up" data-aos-duration="600">
+//                     </figure>
+//                     <div class="card-body items-center text-center">
+//                         <h2 class="card-title"  data-aos="zoom-in-up" data-aos-duration="600">${user.judul}</h2>
+//                         <p  data-aos="zoom-in-up" data-aos-duration="600">${user.deskripsi}</p>
+//                     </div>
+//                 </div>
+//             </div>
+//             `;
+//         })
+//         // kita panggil id output agar bisa di tampilkan ke browser saat di klik
+//         document.getElementById('output').innerHTML = output;
+//     })
+//     // membuat catch jadi kalau ada yang error langsung ketawan
+//     .catch((err) => console.log(err));
 
 
         var scrollpos = window.scrollY;
