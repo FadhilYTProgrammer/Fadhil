@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+.konten {
+    position: relative;
+}
+
+.konten h1 {
+    position: absolute;
+    color: white;
+    transform: translate(-50%,-50%);
+    font-size: 8em;
+    
+}
+
+.konten h1:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+}
+
+.konten h1:nth-child(2) {
+    color: #fff;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate{
+    0%,100%{
+        clip-path: polygon(0 52%, 16% 39%, 34% 36%, 50% 45%, 66% 57%, 84% 55%, 100% 38%, 100% 100%, 0 100%);
+
+    }
+    50%{
+        clip-path: polygon(0 52%, 16% 61%, 38% 60%, 50% 52%, 66% 44%, 84% 40%, 100% 44%, 100% 100%, 0 100%);
+
+    }
+}
+

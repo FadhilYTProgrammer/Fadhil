@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "dev": "npx tailwindcss -i ./input.css -o ./style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.1"
+  },
+  "dependencies": {
+    "daisyui": "^2.38.0"
+  }
+}

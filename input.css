@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .gradient {
+        background: linear-gradient(90deg, #00ddff 0%, #000dff 100%);
+    }
+
+    .btn-gradient {
+        background: linear-gradient(180deg, #00c8ff 0%, #11bcec 100%);
+    }
+}
